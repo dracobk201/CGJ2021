@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c19b730aebc2207489d4a3c4784d4f33, type: 3}
-  m_Name: Showing Quintessence
+  m_Name: Showing Transmute
   m_EditorClassIdentifier: 
   Description: 

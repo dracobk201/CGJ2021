@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4194182838713731459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4194182838713731470}
+  - component: {fileID: 4194182838713731457}
+  - component: {fileID: 4194182838713731456}
+  m_Layer: 0
+  m_Name: EnemyAI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4194182838713731470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4194182838713731459}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4194182838713731457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4194182838713731459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb98d9f6e33f2414d99683a463256c8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilities: {fileID: 11400000, guid: c7cb23a4a51268847947a186bed97632, type: 2}
+  stats: {fileID: 11400000, guid: e3f51a0ac66d8cb4c8f5050ca25ba8f8, type: 2}
+  playerStats: {fileID: 11400000, guid: 6d47b4c2e1e57a04187f8204901d8e8e, type: 2}
+  actualLife:
+    UseVariable: 1
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 2542d7a9edc6a3f46982f188981b5dbe, type: 2}
+  baseDamage:
+    UseVariable: 1
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: b42f3f15eeea2ae49ba26a092ffbd06c, type: 2}
+  turnsToMutate:
+    UseVariable: 1
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: d63e469e7a66b804781d631a1c60b3b0, type: 2}
+  actualAbility:
+    UseVariable: 1
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: 47cc9f8953f0fae40ba0e7341da78045, type: 2}
+  elementalAttackType:
+    UseVariable: 1
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: 8b8b76b25fea59a4fbd2f91f9ab89846, type: 2}
+  enemyAttackDeclared: {fileID: 11400000, guid: 05a42a0154012574ca3911b5b7806139, type: 2}
+  enemyAbilityDeclared: {fileID: 11400000, guid: 285f50cda403cfa4bb13ecb07e7afe40, type: 2}
+  turnFinished: {fileID: 11400000, guid: c3ee441dcb4b86844a90ec10453eb34b, type: 2}
+--- !u!114 &4194182838713731456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4194182838713731459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f69de6bc6d03d67459014507ac53a57e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 47e9c1e1430bdb342b25a2ac207dcf7c, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4194182838713731457}
+        m_TargetAssemblyTypeName: EnemyAI, Assembly-CSharp
+        m_MethodName: Choose
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

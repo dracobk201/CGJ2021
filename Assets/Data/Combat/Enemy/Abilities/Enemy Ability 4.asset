@@ -9,7 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c19b730aebc2207489d4a3c4784d4f33, type: 3}
-  m_Name: Attack Command
+  m_Script: {fileID: 11500000, guid: 0ad373a8642901741bd8d26e1642a218, type: 3}
+  m_Name: Enemy Ability 4
   m_EditorClassIdentifier: 
-  Description: 
+  abilityName: First Dark Ability
+  baseDamage: 45
+  elementalType: 0
+  side: 2

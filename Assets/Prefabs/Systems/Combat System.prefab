@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7505207849314431458}
   - component: {fileID: 6579769519506337632}
   - component: {fileID: 245704593194828213}
+  - component: {fileID: 7063795810209907073}
   m_Layer: 0
   m_Name: Combat System
   m_TagString: Untagged
@@ -177,6 +178,34 @@ MonoBehaviour:
       - m_Target: {fileID: 1308537555173845196}
         m_TargetAssemblyTypeName: CombatSystem, Assembly-CSharp
         m_MethodName: EnemyAbilityDeclared
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7063795810209907073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308537555173845198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f69de6bc6d03d67459014507ac53a57e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: bc985efb598702b459416d090bf6a654, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1308537555173845196}
+        m_TargetAssemblyTypeName: CombatSystem, Assembly-CSharp
+        m_MethodName: PlayerAbilityDeclared
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

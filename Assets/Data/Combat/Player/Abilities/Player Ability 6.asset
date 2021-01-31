@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad373a8642901741bd8d26e1642a218, type: 3}
   m_Name: Player Ability 6
   m_EditorClassIdentifier: 
-  abilityName: Third Dark Ability
+  abilityActive: 1
+  abilityName: 3rd Holy Ability
   baseDamage: 36
   elementalType: 2
   side: 1

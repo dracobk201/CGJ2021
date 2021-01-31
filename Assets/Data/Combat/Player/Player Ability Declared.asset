@@ -9,11 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad373a8642901741bd8d26e1642a218, type: 3}
-  m_Name: Player Ability 1
+  m_Script: {fileID: 11500000, guid: c19b730aebc2207489d4a3c4784d4f33, type: 3}
+  m_Name: Player Ability Declared
   m_EditorClassIdentifier: 
-  abilityActive: 1
-  abilityName: 1st Ability
-  baseDamage: 56
-  elementalType: 0
-  side: 0
+  Description: 

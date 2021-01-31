@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3372160010582852037}
   - component: {fileID: 1092471605286469110}
   m_Layer: 5
-  m_Name: Skill Cost Label
+  m_Name: Skill Effect Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000022888184, y: -20.573997}
-  m_SizeDelta: {x: -0.000045776, y: -41.148}
+  m_AnchoredPosition: {x: 0.000022888184, y: -13.889}
+  m_SizeDelta: {x: -0, y: -27.778}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3372160010582852037
 CanvasRenderer:
@@ -92,8 +92,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -143,6 +143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2632166234024365109}
+  - component: {fileID: 1499273239602218713}
   - component: {fileID: 6540032993744025510}
   - component: {fileID: 4925104982977624018}
   - component: {fileID: 6493227217202088585}
@@ -172,8 +173,35 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 150, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1499273239602218713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7866880667118821008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e259c072779cc4e4fae834adaa9f3f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerBaseDamage:
+    UseVariable: 1
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: b42f3f15eeea2ae49ba26a092ffbd06c, type: 2}
+  playerElementalAttackType:
+    UseVariable: 1
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: d6ce58b490b15f64aaf538ac3ef03ee5, type: 2}
+  actualAbility:
+    UseVariable: 1
+    ConstantValue: 
+    Variable: {fileID: 11400000, guid: e0b0e060c620b3c4d9eab868fc7302b5, type: 2}
+  nameLabel: {fileID: 8263031184037845352}
+  effectLabel: {fileID: 1092471605286469110}
+  playerAbilityDeclared: {fileID: 11400000, guid: bc985efb598702b459416d090bf6a654, type: 2}
 --- !u!222 &6540032993744025510
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -255,7 +283,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4925104982977624018}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1499273239602218713}
+        m_TargetAssemblyTypeName: SkillButton, Assembly-CSharp
+        m_MethodName: SetupAbility
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8759735854452353781
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,8 +330,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 19.4258}
-  m_SizeDelta: {x: 0, y: -38.8517}
+  m_AnchoredPosition: {x: 0, y: 26.11089}
+  m_SizeDelta: {x: 0, y: -52.2219}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1546881758012940145
 CanvasRenderer:
@@ -348,8 +388,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

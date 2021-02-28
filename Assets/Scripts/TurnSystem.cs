@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TurnSystem : MonoBehaviour
 {
+    [SerializeField] private BoolReference turnTransition = null;
     [SerializeField] private GameEvent showingActions = null;
     [SerializeField] private GameEvent hideActions = null;
     [SerializeField] private GameEvent enemyChoosing = null;
@@ -17,6 +16,7 @@ public class TurnSystem : MonoBehaviour
 
     public void PassTurn()
     {
+        turnTransition.Value = true;
         if (_currentTurn.Equals(Global.Turn.Player))
         {
             hideActions.Raise();
@@ -29,12 +29,14 @@ public class TurnSystem : MonoBehaviour
     private void PlayerTurn()
     {
         _currentTurn = Global.Turn.Player;
+        turnTransition.Value = false;
         showingActions.Raise();
     }
 
     private void EnemyTurn()
     {
         _currentTurn = Global.Turn.Enemy;
+        turnTransition.Value = false;
         enemyChoosing.Raise();
     }
 }

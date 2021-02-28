@@ -44,6 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 678f5284d5c0e8b4cbdc8c9c557cf676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnTransition:
+    UseVariable: 1
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: bc4145b90a900064ebd5c4d493d7eaf9, type: 2}
   showingActions: {fileID: 11400000, guid: 81a79459d9181134b800aa747c10e1f9, type: 2}
   hideActions: {fileID: 11400000, guid: 6c635ee6ae998f44e8c26f0d29c86491, type: 2}
   enemyChoosing: {fileID: 11400000, guid: 47e9c1e1430bdb342b25a2ac207dcf7c, type: 2}

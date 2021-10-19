@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1308537555173845199}
   - component: {fileID: 1308537555173845196}
-  - component: {fileID: 5254525811248636996}
-  - component: {fileID: 7505207849314431458}
-  - component: {fileID: 6579769519506337632}
-  - component: {fileID: 245704593194828213}
-  - component: {fileID: 7063795810209907073}
+  - component: {fileID: 944659504494293053}
+  - component: {fileID: 6071018551810912647}
+  - component: {fileID: 8176953598059861884}
+  - component: {fileID: 1288387640347920317}
+  - component: {fileID: 5019564238275991808}
   m_Layer: 0
   m_Name: Combat System
   m_TagString: Untagged
@@ -51,31 +51,31 @@ MonoBehaviour:
   playerStats: {fileID: 11400000, guid: 6d47b4c2e1e57a04187f8204901d8e8e, type: 2}
   enemyStats: {fileID: 11400000, guid: e3f51a0ac66d8cb4c8f5050ca25ba8f8, type: 2}
   playerLife:
-    UseVariable: 1
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: 3d8d07b7c3768e942ae66a4aebabd90c, type: 2}
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: 3d8d07b7c3768e942ae66a4aebabd90c, type: 2}
   enemyLife:
-    UseVariable: 1
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: 2542d7a9edc6a3f46982f188981b5dbe, type: 2}
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: 2542d7a9edc6a3f46982f188981b5dbe, type: 2}
   playerBaseDamage:
-    UseVariable: 1
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: 0b88d342360acb547bb559b8482901c1, type: 2}
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: afa90d5057be3624a9ea38d8f5e6c136, type: 2}
   enemyBaseDamage:
-    UseVariable: 1
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: b42f3f15eeea2ae49ba26a092ffbd06c, type: 2}
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: b42f3f15eeea2ae49ba26a092ffbd06c, type: 2}
   enemyElementalAttackType:
-    UseVariable: 1
-    ConstantValue: 
-    Variable: {fileID: 11400000, guid: 8b8b76b25fea59a4fbd2f91f9ab89846, type: 2}
+    _useConstant: 0
+    _constantValue: 
+    _variable: {fileID: 11400000, guid: 8b8b76b25fea59a4fbd2f91f9ab89846, type: 2}
   playerElementalAttackType:
-    UseVariable: 1
-    ConstantValue: 
-    Variable: {fileID: 11400000, guid: d6ce58b490b15f64aaf538ac3ef03ee5, type: 2}
+    _useConstant: 0
+    _constantValue: 
+    _variable: {fileID: 11400000, guid: d6ce58b490b15f64aaf538ac3ef03ee5, type: 2}
   turnFinished: {fileID: 11400000, guid: c3ee441dcb4b86844a90ec10453eb34b, type: 2}
---- !u!114 &5254525811248636996
+--- !u!114 &944659504494293053
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -84,67 +84,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1308537555173845198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69de6bc6d03d67459014507ac53a57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 5509a0d646958c64ea905aaa9f70c70e, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1308537555173845196}
-        m_TargetAssemblyTypeName: CombatSystem, Assembly-CSharp
-        m_MethodName: PlayerAttackDeclared
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &7505207849314431458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308537555173845198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69de6bc6d03d67459014507ac53a57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: c137b2338f55b9547852704751557a70, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1308537555173845196}
-        m_TargetAssemblyTypeName: CombatSystem, Assembly-CSharp
-        m_MethodName: PlayerDefendDeclared
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &6579769519506337632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308537555173845198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69de6bc6d03d67459014507ac53a57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 05a42a0154012574ca3911b5b7806139, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 05a42a0154012574ca3911b5b7806139, type: 2}
+  _event: {fileID: 11400000, guid: 05a42a0154012574ca3911b5b7806139, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1308537555173845196}
@@ -159,7 +107,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &245704593194828213
+--- !u!114 &6071018551810912647
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,11 +116,79 @@ MonoBehaviour:
   m_GameObject: {fileID: 1308537555173845198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69de6bc6d03d67459014507ac53a57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 285f50cda403cfa4bb13ecb07e7afe40, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 5509a0d646958c64ea905aaa9f70c70e, type: 2}
+  _event: {fileID: 11400000, guid: 5509a0d646958c64ea905aaa9f70c70e, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1308537555173845196}
+        m_TargetAssemblyTypeName: CombatSystem, Assembly-CSharp
+        m_MethodName: PlayerAttackDeclared
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8176953598059861884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308537555173845198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: c137b2338f55b9547852704751557a70, type: 2}
+  _event: {fileID: 11400000, guid: c137b2338f55b9547852704751557a70, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1308537555173845196}
+        m_TargetAssemblyTypeName: CombatSystem, Assembly-CSharp
+        m_MethodName: PlayerDefendDeclared
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1288387640347920317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308537555173845198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: 285f50cda403cfa4bb13ecb07e7afe40, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1308537555173845196}
@@ -187,7 +203,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &7063795810209907073
+--- !u!114 &5019564238275991808
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,11 +212,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1308537555173845198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69de6bc6d03d67459014507ac53a57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: bc985efb598702b459416d090bf6a654, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: dd78d5771f8c5c645b3d458b50397d0f, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1308537555173845196}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4194182838713731470}
   - component: {fileID: 4194182838713731457}
-  - component: {fileID: 4194182838713731456}
+  - component: {fileID: 3722594561906466114}
   m_Layer: 0
   m_Name: EnemyAI
   m_TagString: Untagged
@@ -48,29 +48,29 @@ MonoBehaviour:
   stats: {fileID: 11400000, guid: e3f51a0ac66d8cb4c8f5050ca25ba8f8, type: 2}
   playerStats: {fileID: 11400000, guid: 6d47b4c2e1e57a04187f8204901d8e8e, type: 2}
   actualLife:
-    UseVariable: 1
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: 2542d7a9edc6a3f46982f188981b5dbe, type: 2}
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: 2542d7a9edc6a3f46982f188981b5dbe, type: 2}
   baseDamage:
-    UseVariable: 1
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: b42f3f15eeea2ae49ba26a092ffbd06c, type: 2}
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: b42f3f15eeea2ae49ba26a092ffbd06c, type: 2}
   turnsToMutate:
-    UseVariable: 1
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: d63e469e7a66b804781d631a1c60b3b0, type: 2}
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: d63e469e7a66b804781d631a1c60b3b0, type: 2}
   actualAbility:
-    UseVariable: 1
-    ConstantValue: 
-    Variable: {fileID: 11400000, guid: 47cc9f8953f0fae40ba0e7341da78045, type: 2}
+    _useConstant: 0
+    _constantValue: 
+    _variable: {fileID: 11400000, guid: cb5ec514c790e95408ee9e80aa97c66a, type: 2}
   elementalAttackType:
-    UseVariable: 1
-    ConstantValue: 
-    Variable: {fileID: 11400000, guid: 8b8b76b25fea59a4fbd2f91f9ab89846, type: 2}
+    _useConstant: 0
+    _constantValue: 
+    _variable: {fileID: 11400000, guid: 8b8b76b25fea59a4fbd2f91f9ab89846, type: 2}
   enemyAttackDeclared: {fileID: 11400000, guid: 05a42a0154012574ca3911b5b7806139, type: 2}
   enemyAbilityDeclared: {fileID: 11400000, guid: 285f50cda403cfa4bb13ecb07e7afe40, type: 2}
   turnFinished: {fileID: 11400000, guid: c3ee441dcb4b86844a90ec10453eb34b, type: 2}
---- !u!114 &4194182838713731456
+--- !u!114 &3722594561906466114
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -79,11 +79,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 4194182838713731459}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69de6bc6d03d67459014507ac53a57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 47e9c1e1430bdb342b25a2ac207dcf7c, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 877fa0aed6d2d2549998bf8ae7867639, type: 2}
+  _event: {fileID: 11400000, guid: 877fa0aed6d2d2549998bf8ae7867639, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4194182838713731457}

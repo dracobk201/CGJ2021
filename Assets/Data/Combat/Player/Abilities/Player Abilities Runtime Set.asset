@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 813af0dcd014d4046a9db240f73c7a3d, type: 3}
   m_Name: Player Abilities Runtime Set
   m_EditorClassIdentifier: 
-  Items:
+  _list:
   - {fileID: 11400000, guid: 20838e517b06d774eb3ee29fd4415dcf, type: 2}
   - {fileID: 11400000, guid: 3322ef0d3ec834b40970c16341eda883, type: 2}
   - {fileID: 11400000, guid: d5badcdef48277642a2f6079289e938b, type: 2}
@@ -25,4 +25,3 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 29ecffb4dc9baa442be3aabeb85ffdc7, type: 2}
   - {fileID: 11400000, guid: 06fd36c1ad9e8304eb81f30913c18c6e, type: 2}
   - {fileID: 11400000, guid: 993b524ec2e3f2e4f8564d2433829369, type: 2}
-  Description: 

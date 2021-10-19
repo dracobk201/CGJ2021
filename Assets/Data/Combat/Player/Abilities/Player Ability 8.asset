@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Player Ability 8
   m_EditorClassIdentifier: 
   abilityActive: 0
-  abilityName: 2nd Great Ability
-  baseDamage: 86
-  elementalType: 1
+  abilityName: 3rd Great Ability
+  baseDamage: 60
+  elementalType: 2
   side: 0

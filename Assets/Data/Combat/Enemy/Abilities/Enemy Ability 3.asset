@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad373a8642901741bd8d26e1642a218, type: 3}
   m_Name: Enemy Ability 3
   m_EditorClassIdentifier: 
-  abilityName: Third Ability
-  baseDamage: 75
-  elementalType: 2
-  side: 0
+  abilityName: First Dark Ability
+  baseDamage: 45
+  elementalType: 0
+  side: 2

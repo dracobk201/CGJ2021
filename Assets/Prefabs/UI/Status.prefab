@@ -523,8 +523,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 81a79459d9181134b800aa747c10e1f9, type: 2}
-        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
+      - m_Target: {fileID: 11400000, guid: ebfa39c7eef2a8a429520cd0dfe878ab, type: 2}
+        m_TargetAssemblyTypeName: ScriptableObjectArchitecture.GameEventBase, ScriptableObject-Architecture
         m_MethodName: Raise
         m_Mode: 1
         m_Arguments:
@@ -1867,10 +1867,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3264019431598515577}
-  - component: {fileID: 4602166581383021308}
-  - component: {fileID: 741523783290848107}
-  - component: {fileID: 7530214518385559622}
-  - component: {fileID: 4029404133750544296}
+  - component: {fileID: 9139831872649170284}
+  - component: {fileID: 5077282711126635121}
+  - component: {fileID: 7195177950026759747}
+  - component: {fileID: 4043640867586466937}
   m_Layer: 5
   m_Name: Status
   m_TagString: Untagged
@@ -1898,7 +1898,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4602166581383021308
+--- !u!114 &9139831872649170284
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1907,11 +1907,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7403243867559325186}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69de6bc6d03d67459014507ac53a57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 81a79459d9181134b800aa747c10e1f9, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: ebfa39c7eef2a8a429520cd0dfe878ab, type: 2}
+  _event: {fileID: 11400000, guid: ebfa39c7eef2a8a429520cd0dfe878ab, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3688548364863226613}
@@ -1926,7 +1930,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &741523783290848107
+--- !u!114 &5077282711126635121
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1935,11 +1939,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7403243867559325186}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69de6bc6d03d67459014507ac53a57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 227ae971cd7863f41ac8c2b78938a599, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 3c028484c3d60664788f5cd60fdeb685, type: 2}
+  _event: {fileID: 11400000, guid: 3c028484c3d60664788f5cd60fdeb685, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3688548364863226613}
@@ -1954,7 +1962,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &7530214518385559622
+--- !u!114 &7195177950026759747
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1963,11 +1971,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7403243867559325186}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69de6bc6d03d67459014507ac53a57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 7129fee0cd0534c42a1e5daa30cfcaa3, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 2ecbbb0a9bba1eb46bef113a32cb9b63, type: 2}
+  _event: {fileID: 11400000, guid: 2ecbbb0a9bba1eb46bef113a32cb9b63, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3688548364863226613}
@@ -1982,7 +1994,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4029404133750544296
+--- !u!114 &4043640867586466937
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1991,11 +2003,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7403243867559325186}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69de6bc6d03d67459014507ac53a57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 756fc9098b1951d49b70ba3da7aad0cc, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: b21230077fae5ce4c81fc2e0d89875bc, type: 2}
+  _event: {fileID: 11400000, guid: b21230077fae5ce4c81fc2e0d89875bc, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3688548364863226613}

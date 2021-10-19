@@ -10,10 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2979055052546879138}
   - component: {fileID: 8834257259615231985}
-  - component: {fileID: 3239619063469744829}
-  - component: {fileID: 204369711494640175}
-  - component: {fileID: 5864786277139090751}
-  - component: {fileID: 3778953943567527618}
+  - component: {fileID: 400825031916550175}
+  - component: {fileID: 507978729995948926}
+  - component: {fileID: 3416125380958858909}
+  - component: {fileID: 2508001894719641195}
+  - component: {fileID: 5943982591137485457}
   m_Layer: 5
   m_Name: Skills
   m_TagString: Untagged
@@ -56,7 +57,7 @@ MonoBehaviour:
   playerAbilities: {fileID: 11400000, guid: a8869552eb06f8749a374236f93bef47, type: 2}
   buttonHolder: {fileID: 7500013878467487122}
   buttonPrefab: {fileID: 7866880667118821008, guid: fb3796cb4b1827c4aaf2a8a85aaa9b8c, type: 3}
---- !u!114 &3239619063469744829
+--- !u!114 &400825031916550175
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -65,11 +66,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1013668513684197531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69de6bc6d03d67459014507ac53a57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 81a79459d9181134b800aa747c10e1f9, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: ebfa39c7eef2a8a429520cd0dfe878ab, type: 2}
+  _event: {fileID: 11400000, guid: ebfa39c7eef2a8a429520cd0dfe878ab, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4665900020961660104}
@@ -84,7 +89,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &204369711494640175
+--- !u!114 &507978729995948926
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,11 +98,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1013668513684197531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69de6bc6d03d67459014507ac53a57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 227ae971cd7863f41ac8c2b78938a599, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 3c028484c3d60664788f5cd60fdeb685, type: 2}
+  _event: {fileID: 11400000, guid: 3c028484c3d60664788f5cd60fdeb685, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4665900020961660104}
@@ -112,7 +121,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5864786277139090751
+--- !u!114 &3416125380958858909
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,11 +130,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1013668513684197531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69de6bc6d03d67459014507ac53a57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 7129fee0cd0534c42a1e5daa30cfcaa3, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 2ecbbb0a9bba1eb46bef113a32cb9b63, type: 2}
+  _event: {fileID: 11400000, guid: 2ecbbb0a9bba1eb46bef113a32cb9b63, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4665900020961660104}
@@ -140,7 +153,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
---- !u!114 &3778953943567527618
+--- !u!114 &2508001894719641195
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,11 +162,47 @@ MonoBehaviour:
   m_GameObject: {fileID: 1013668513684197531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69de6bc6d03d67459014507ac53a57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 4810cc2b82cc5644e90275ddebc6eab8, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 25a263ae954f29249a76ccebfb5d6e52, type: 2}
+  _event: {fileID: 11400000, guid: 25a263ae954f29249a76ccebfb5d6e52, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4665900020961660104}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5943982591137485457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013668513684197531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: b21230077fae5ce4c81fc2e0d89875bc, type: 2}
+  _event: {fileID: 11400000, guid: b21230077fae5ce4c81fc2e0d89875bc, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4665900020961660104}
@@ -289,8 +338,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 81a79459d9181134b800aa747c10e1f9, type: 2}
-        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
+      - m_Target: {fileID: 11400000, guid: ebfa39c7eef2a8a429520cd0dfe878ab, type: 2}
+        m_TargetAssemblyTypeName: ScriptableObjectArchitecture.GameEventBase, ScriptableObject-Architecture
         m_MethodName: Raise
         m_Mode: 1
         m_Arguments:

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Player Ability 5
   m_EditorClassIdentifier: 
   abilityActive: 1
-  abilityName: 2nd Holy Ability
-  baseDamage: 48
-  elementalType: 1
+  abilityName: 3rd Holy Ability
+  baseDamage: 36
+  elementalType: 2
   side: 1

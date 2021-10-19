@@ -461,10 +461,10 @@ MonoBehaviour:
   playerAbilities: {fileID: 11400000, guid: a8869552eb06f8749a374236f93bef47, type: 2}
   playerStats: {fileID: 11400000, guid: 6d47b4c2e1e57a04187f8204901d8e8e, type: 2}
   turnTransition:
-    UseVariable: 1
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: bc4145b90a900064ebd5c4d493d7eaf9, type: 2}
-  transmuteStepClear: {fileID: 11400000, guid: 45859e25eda200b40bf87883fd5177a1, type: 2}
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: bc4145b90a900064ebd5c4d493d7eaf9, type: 2}
+  transmuteStepClear: {fileID: 11400000, guid: ff56121683805ed489509e686b2aa0e0, type: 2}
   nameLabel: {fileID: 2805021954498882781}
   firstEffectLabel: {fileID: 6522746896508484046}
   secondEffectLabel: {fileID: 9077338511707352903}

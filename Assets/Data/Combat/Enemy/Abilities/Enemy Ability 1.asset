@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad373a8642901741bd8d26e1642a218, type: 3}
   m_Name: Enemy Ability 1
   m_EditorClassIdentifier: 
-  abilityName: First Ability
-  baseDamage: 30
-  elementalType: 0
+  abilityName: Second Ability
+  baseDamage: 15
+  elementalType: 1
   side: 0

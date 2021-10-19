@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Player Ability 11
   m_EditorClassIdentifier: 
   abilityActive: 0
-  abilityName: 2nd Big Holy
-  baseDamage: 192
-  elementalType: 1
+  abilityName: 3rd Big Holy
+  baseDamage: 108
+  elementalType: 2
   side: 1

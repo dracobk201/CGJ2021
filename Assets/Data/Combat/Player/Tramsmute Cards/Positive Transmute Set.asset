@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3c98c4af2dd497409c878d06fbf891c, type: 3}
   m_Name: Positive Transmute Set
   m_EditorClassIdentifier: 
-  Items:
+  _list:
   - {fileID: 11400000, guid: 3470c7c033db5204d8242b7f6cfd7e6e, type: 2}
   - {fileID: 11400000, guid: f507c7f122421d2468de102b9ff75032, type: 2}
   - {fileID: 11400000, guid: 46b5547567cf26a47aa9a1338b261fbf, type: 2}
@@ -33,4 +33,3 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c6c17e27bb86b6c41bca20d583636925, type: 2}
   - {fileID: 11400000, guid: 6e23a0f9250c36e479326aa8352538d3, type: 2}
   - {fileID: 11400000, guid: a22f386bfe4c56548a5fa72adf7115c8, type: 2}
-  Description: 

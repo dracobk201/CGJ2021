@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Player Ability 9
   m_EditorClassIdentifier: 
   abilityActive: 0
-  abilityName: 3rd Great Ability
-  baseDamage: 60
-  elementalType: 2
-  side: 0
+  abilityName: 1st Big Holy
+  baseDamage: 132
+  elementalType: 0
+  side: 1

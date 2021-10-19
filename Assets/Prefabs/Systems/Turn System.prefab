@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7997501031647105704}
   - component: {fileID: 7997501031647105707}
-  - component: {fileID: 7997501031647105706}
+  - component: {fileID: 7534732112990075853}
   m_Layer: 0
   m_Name: Turn System
   m_TagString: Untagged
@@ -45,13 +45,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnTransition:
-    UseVariable: 1
-    ConstantValue: 0
-    Variable: {fileID: 11400000, guid: bc4145b90a900064ebd5c4d493d7eaf9, type: 2}
-  showingActions: {fileID: 11400000, guid: 81a79459d9181134b800aa747c10e1f9, type: 2}
-  hideActions: {fileID: 11400000, guid: 6c635ee6ae998f44e8c26f0d29c86491, type: 2}
-  enemyChoosing: {fileID: 11400000, guid: 47e9c1e1430bdb342b25a2ac207dcf7c, type: 2}
---- !u!114 &7997501031647105706
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: bc4145b90a900064ebd5c4d493d7eaf9, type: 2}
+  showingActions: {fileID: 11400000, guid: ebfa39c7eef2a8a429520cd0dfe878ab, type: 2}
+  hideActions: {fileID: 11400000, guid: 9b450f7f34260884283cc4f8602acf82, type: 2}
+  enemyChoosing: {fileID: 11400000, guid: 877fa0aed6d2d2549998bf8ae7867639, type: 2}
+--- !u!114 &7534732112990075853
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -60,11 +60,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7997501031647105717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f69de6bc6d03d67459014507ac53a57e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: c3ee441dcb4b86844a90ec10453eb34b, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: c3ee441dcb4b86844a90ec10453eb34b, type: 2}
+  _event: {fileID: 11400000, guid: c3ee441dcb4b86844a90ec10453eb34b, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7997501031647105707}

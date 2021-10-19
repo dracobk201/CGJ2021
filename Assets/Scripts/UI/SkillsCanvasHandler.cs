@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class SkillsCanvasHandler : MonoBehaviour
 {
-    [SerializeField] private AbilitiesRuntimeSet playerAbilities = null;
-    [SerializeField] private Transform buttonHolder = null;
-    [SerializeField] private GameObject buttonPrefab = null;
+    [SerializeField] private AbilitiesRuntimeSet playerAbilities = default(AbilitiesRuntimeSet);
+    [SerializeField] private Transform buttonHolder = default(Transform);
+    [SerializeField] private GameObject buttonPrefab = default(GameObject);
 
     private void OnEnable()
     {
@@ -20,7 +20,7 @@ public class SkillsCanvasHandler : MonoBehaviour
 
     private void InstantiatePrefabs()
     {
-        foreach (var ability in playerAbilities.Items)
+        foreach (var ability in playerAbilities)
         {
             if (ability.abilityActive)
             {

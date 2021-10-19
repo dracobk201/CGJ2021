@@ -1,5 +1,6 @@
 using UnityEngine;
+using ScriptableObjectArchitecture;
 
 [CreateAssetMenu(menuName = "Runtime Set/Abilities")]
-public class AbilitiesRuntimeSet : RuntimeSet<Ability>
+public class AbilitiesRuntimeSet : Collection<Ability>
 { }

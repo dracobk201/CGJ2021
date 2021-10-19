@@ -1,18 +1,19 @@
+using ScriptableObjectArchitecture;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] private AbilitiesRuntimeSet abilities = null; 
-    [SerializeField] private EnemyStats stats = null;
-    [SerializeField] private PlayerStats playerStats = null;
-    [SerializeField] private IntReference actualLife = null;
-    [SerializeField] private IntReference baseDamage = null;
-    [SerializeField] private IntReference turnsToMutate = null;
-    [SerializeField] private StringReference actualAbility = null;
-    [SerializeField] private StringReference elementalAttackType = null;
-    [SerializeField] private GameEvent enemyAttackDeclared = null;
-    [SerializeField] private GameEvent enemyAbilityDeclared = null;
-    [SerializeField] private GameEvent turnFinished = null;
+    [SerializeField] private AbilitiesRuntimeSet abilities = default(AbilitiesRuntimeSet); 
+    [SerializeField] private EnemyStats stats = default(EnemyStats); 
+    [SerializeField] private PlayerStats playerStats = default(PlayerStats); 
+    [SerializeField] private IntReference actualLife = default(IntReference); 
+    [SerializeField] private IntReference baseDamage = default(IntReference); 
+    [SerializeField] private IntReference turnsToMutate = default(IntReference); 
+    [SerializeField] private StringReference actualAbility = default(StringReference); 
+    [SerializeField] private StringReference elementalAttackType = default(StringReference); 
+    [SerializeField] private GameEvent enemyAttackDeclared = default(GameEvent); 
+    [SerializeField] private GameEvent enemyAbilityDeclared = default(GameEvent); 
+    [SerializeField] private GameEvent turnFinished = default(GameEvent); 
 
     private int _actualTurns;
 
@@ -70,7 +71,7 @@ public class EnemyAI : MonoBehaviour
             else
             {
                 print("hago lo que sea");
-                SetupAbility(Random.Range(0, abilities.Items.Count));
+                SetupAbility(Random.Range(0, abilities.Count));
                 enemyAbilityDeclared.Raise();
             }
         }
@@ -128,8 +129,8 @@ public class EnemyAI : MonoBehaviour
 
     private void SetupAbility(int index)
     { 
-        baseDamage.Value = abilities.Items[index].baseDamage;
-        actualAbility.Value = abilities.Items[index].abilityName;
-        elementalAttackType.Value = abilities.Items[index].elementalType.ToString();
+        baseDamage.Value = abilities[index].baseDamage;
+        actualAbility.Value = abilities[index].abilityName;
+        elementalAttackType.Value = abilities[index].elementalType.ToString();
     }
 }

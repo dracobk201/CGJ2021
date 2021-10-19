@@ -1,17 +1,18 @@
+using ScriptableObjectArchitecture;
 using System;
 using UnityEngine;
 
 public class CombatSystem : MonoBehaviour
 {
-    [SerializeField] private PlayerStats playerStats = null;
-    [SerializeField] private EnemyStats enemyStats = null;
-    [SerializeField] private IntReference playerLife = null;
-    [SerializeField] private IntReference enemyLife = null;
-    [SerializeField] private IntReference playerBaseDamage = null;
-    [SerializeField] private IntReference enemyBaseDamage = null;
-    [SerializeField] private StringReference enemyElementalAttackType = null;
-    [SerializeField] private StringReference playerElementalAttackType = null;
-    [SerializeField] private GameEvent turnFinished = null;
+    [SerializeField] private PlayerStats playerStats = default(PlayerStats);
+    [SerializeField] private EnemyStats enemyStats = default(EnemyStats);
+    [SerializeField] private IntReference playerLife = default(IntReference);
+    [SerializeField] private IntReference enemyLife = default(IntReference);
+    [SerializeField] private IntReference playerBaseDamage = default(IntReference);
+    [SerializeField] private IntReference enemyBaseDamage = default(IntReference);
+    [SerializeField] private StringReference enemyElementalAttackType = default(StringReference);
+    [SerializeField] private StringReference playerElementalAttackType = default(StringReference);
+    [SerializeField] private GameEvent turnFinished = default(GameEvent);
     private bool playerDefending;
     private bool enemyDefending;
 

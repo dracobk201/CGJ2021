@@ -1,14 +1,15 @@
 using UnityEngine;
 using TMPro;
+using ScriptableObjectArchitecture;
 
 public class SkillButton : MonoBehaviour
 {
-    [SerializeField] private IntReference playerBaseDamage = null;
-    [SerializeField] private StringReference playerElementalAttackType = null;
-    [SerializeField] private StringReference actualAbility = null;
-    [SerializeField] private TextMeshProUGUI nameLabel = null;
-    [SerializeField] private TextMeshProUGUI effectLabel = null;
-    [SerializeField] private GameEvent playerAbilityDeclared = null;
+    [SerializeField] private IntReference playerBaseDamage = default(IntReference); 
+    [SerializeField] private StringReference playerElementalAttackType = default(StringReference); 
+    [SerializeField] private StringReference actualAbility = default(StringReference); 
+    [SerializeField] private TextMeshProUGUI nameLabel = default(TextMeshProUGUI); 
+    [SerializeField] private TextMeshProUGUI effectLabel = default(TextMeshProUGUI); 
+    [SerializeField] private GameEvent playerAbilityDeclared = default(GameEvent); 
 
     private string _actualAbilityName = null;
     private Global.ElementalType _playerElementalAttackType;

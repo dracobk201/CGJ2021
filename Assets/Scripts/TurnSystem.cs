@@ -1,11 +1,12 @@
+using ScriptableObjectArchitecture;
 using UnityEngine;
 
 public class TurnSystem : MonoBehaviour
 {
-    [SerializeField] private BoolReference turnTransition = null;
-    [SerializeField] private GameEvent showingActions = null;
-    [SerializeField] private GameEvent hideActions = null;
-    [SerializeField] private GameEvent enemyChoosing = null;
+    [SerializeField] private BoolReference turnTransition = default(BoolReference);
+    [SerializeField] private GameEvent showingActions = default(GameEvent);
+    [SerializeField] private GameEvent hideActions = default(GameEvent);
+    [SerializeField] private GameEvent enemyChoosing = default(GameEvent);
     private Global.Turn _currentTurn;
 
     private void Start()

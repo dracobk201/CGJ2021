@@ -1,17 +1,18 @@
 using UnityEngine;
 using TMPro;
+using ScriptableObjectArchitecture;
 
 public class TransmuteButton : MonoBehaviour
 {
-    [SerializeField] private TransmuteRuntimeSet negativeTransmutes = null;
-    [SerializeField] private TransmuteRuntimeSet positiveTransmutes = null;
-    [SerializeField] private AbilitiesRuntimeSet playerAbilities = null;
-    [SerializeField] private PlayerStats playerStats = null;
-    [SerializeField] private BoolReference turnTransition = null;
-    [SerializeField] private GameEvent transmuteStepClear = null;
-    [SerializeField] private TextMeshProUGUI nameLabel = null;
-    [SerializeField] private TextMeshProUGUI firstEffectLabel = null;
-    [SerializeField] private TextMeshProUGUI secondEffectLabel = null;
+    [SerializeField] private TransmuteRuntimeSet negativeTransmutes = default(TransmuteRuntimeSet); 
+    [SerializeField] private TransmuteRuntimeSet positiveTransmutes = default(TransmuteRuntimeSet); 
+    [SerializeField] private AbilitiesRuntimeSet playerAbilities = default(AbilitiesRuntimeSet); 
+    [SerializeField] private PlayerStats playerStats = default(PlayerStats); 
+    [SerializeField] private BoolReference turnTransition = default(BoolReference); 
+    [SerializeField] private GameEvent transmuteStepClear = default(GameEvent); 
+    [SerializeField] private TextMeshProUGUI nameLabel = default(TextMeshProUGUI); 
+    [SerializeField] private TextMeshProUGUI firstEffectLabel = default(TextMeshProUGUI); 
+    [SerializeField] private TextMeshProUGUI secondEffectLabel = default(TextMeshProUGUI); 
     private bool haveToChangeAbility;
     private bool targetAbilityStatus;
     private int targetAbilityIndex;
@@ -25,12 +26,12 @@ public class TransmuteButton : MonoBehaviour
         TransmuteCard actualCard;
         if (type.Equals(Global.TransmuteType.Positive))
         {
-            actualCard = positiveTransmutes.Items[index];
+            actualCard = positiveTransmutes[index];
             targetAbilityStatus = true;
         }
         else
         {
-            actualCard = negativeTransmutes.Items[index];
+            actualCard = negativeTransmutes[index];
             targetAbilityStatus = false;
         }
 
@@ -40,9 +41,9 @@ public class TransmuteButton : MonoBehaviour
         {
             haveToChangeAbility = true;
             targetAbilityIndex = actualCard.abilityIndex;
-            firstEffectLabel.text = $"{playerAbilities.Items[targetAbilityIndex].abilityName}";
+            firstEffectLabel.text = $"{playerAbilities[targetAbilityIndex].abilityName}";
             string symbolToPut = (targetAbilityStatus) ? "++" : "--";
-            secondEffectLabel.text = $"{playerAbilities.Items[targetAbilityIndex].elementalType}{symbolToPut}";
+            secondEffectLabel.text = $"{playerAbilities[targetAbilityIndex].elementalType}{symbolToPut}";
         }
         else
         {
@@ -61,7 +62,7 @@ public class TransmuteButton : MonoBehaviour
         if (turnTransition.Value) return;
         if (haveToChangeAbility)
         {
-            playerAbilities.Items[targetAbilityIndex].abilityActive = targetAbilityStatus;
+            playerAbilities[targetAbilityIndex].abilityActive = targetAbilityStatus;
         }
         else
         {

@@ -1,12 +1,13 @@
+using ScriptableObjectArchitecture;
 using UnityEngine;
 
 public class TransmuteCanvasHandler : MonoBehaviour
 {
-    [SerializeField] private GameEvent turnFinished = null;
-    [SerializeField] private Transform negativeHolder = null;
-    [SerializeField] private Transform positiveHolder = null;
-    [SerializeField] private GameObject backButton = null;
-    [SerializeField] private GameObject buttonPrefab = null;
+    [SerializeField] private GameEvent turnFinished = default(GameEvent);
+    [SerializeField] private Transform negativeHolder = default(Transform);
+    [SerializeField] private Transform positiveHolder = default(Transform);
+    [SerializeField] private GameObject backButton = default(GameObject);
+    [SerializeField] private GameObject buttonPrefab = default(GameObject);
     private int actualPhase;
      
     private void OnEnable()

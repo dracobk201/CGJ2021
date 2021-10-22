@@ -70,6 +70,31 @@ MonoBehaviour:
   enemyAttackDeclared: {fileID: 11400000, guid: 05a42a0154012574ca3911b5b7806139, type: 2}
   enemyAbilityDeclared: {fileID: 11400000, guid: 285f50cda403cfa4bb13ecb07e7afe40, type: 2}
   turnFinished: {fileID: 11400000, guid: c3ee441dcb4b86844a90ec10453eb34b, type: 2}
+  uiMessageToShow: {fileID: 11400000, guid: d12b5bb6d60524e48a1a1f8ae9a564e8, type: 2}
+  playerName:
+    _useConstant: 0
+    _constantValue: 
+    _variable: {fileID: 11400000, guid: 49b2cd935202c4d4ba1d775f8eaad365, type: 2}
+  fellowName:
+    _useConstant: 0
+    _constantValue: 
+    _variable: {fileID: 11400000, guid: 7f8739e24ab6e134ba461f4ce799094d, type: 2}
+  enemyFireAttackName:
+    _useConstant: 0
+    _constantValue: 
+    _variable: {fileID: 11400000, guid: d9ec9d49ce42c26418fee80d50633af5, type: 2}
+  enemyThunderAttackName:
+    _useConstant: 0
+    _constantValue: 
+    _variable: {fileID: 11400000, guid: 1990617217d59da468b2462e2cc0d5a8, type: 2}
+  enemyWaterAttackName:
+    _useConstant: 0
+    _constantValue: 
+    _variable: {fileID: 11400000, guid: 98b8219b6ea7faa49864ba3a50127d5d, type: 2}
+  enemyMadnessAttackName:
+    _useConstant: 0
+    _constantValue: 
+    _variable: {fileID: 11400000, guid: 6db2d314258b0df42af61304e64aa5dd, type: 2}
 --- !u!114 &3722594561906466114
 MonoBehaviour:
   m_ObjectHideFlags: 0

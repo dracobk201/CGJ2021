@@ -55,7 +55,6 @@ public class CombatSystem : MonoBehaviour
             enemyStats.physicalDefenseConstant, 
             enemyDefending);
         turnFinished.Raise();
-
     }
 
     public void PlayerAbilityDeclared()

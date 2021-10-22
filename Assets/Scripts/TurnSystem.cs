@@ -7,6 +7,7 @@ public class TurnSystem : MonoBehaviour
     [SerializeField] private GameEvent showingActions = default(GameEvent);
     [SerializeField] private GameEvent hideActions = default(GameEvent);
     [SerializeField] private GameEvent enemyChoosing = default(GameEvent);
+
     private Global.Turn _currentTurn;
 
     private void Start()
@@ -24,7 +25,7 @@ public class TurnSystem : MonoBehaviour
             Invoke(nameof(EnemyTurn), 0.5f);
         }
         else
-            Invoke(nameof(PlayerTurn), 0.5f);
+            Invoke(nameof(PlayerTurn), 1f);
     }
 
     private void PlayerTurn()

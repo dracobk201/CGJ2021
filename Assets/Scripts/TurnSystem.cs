@@ -1,44 +1,69 @@
 using ScriptableObjectArchitecture;
+using System.Collections;
 using UnityEngine;
 
 public class TurnSystem : MonoBehaviour
 {
-    [SerializeField] private BoolReference turnTransition = default(BoolReference);
+    [SerializeField] private BoolReference isCombatOver = default(BoolReference);
+    [SerializeField] private GameEvent showCombatIntro = default(GameEvent);
     [SerializeField] private GameEvent showingActions = default(GameEvent);
     [SerializeField] private GameEvent hideActions = default(GameEvent);
     [SerializeField] private GameEvent enemyChoosing = default(GameEvent);
 
-    private Global.Turn _currentTurn;
+    private Phase _currentPhase;
 
     private void Start()
     {
-        _currentTurn = Global.Turn.Player;
+        _currentPhase = Phase.CombatIntro;
+        TurnProgression();
+    }
+
+    public void TurnProgression()
+    {
+        TurnTransition();
+    }
+
+    private IEnumerator EnemyEndedNowPlayerTurn()
+    {
+        _currentPhase = Phase.PlayerTurn;
+        yield return new WaitForSeconds(2f);
         showingActions.Raise();
     }
 
-    public void PassTurn()
+    private IEnumerator PlayerEndedNowEnemyTurn()
     {
-        turnTransition.Value = true;
-        if (_currentTurn.Equals(Global.Turn.Player))
-        {
-            hideActions.Raise();
-            Invoke(nameof(EnemyTurn), 0.5f);
-        }
-        else
-            Invoke(nameof(PlayerTurn), 1f);
-    }
-
-    private void PlayerTurn()
-    {
-        _currentTurn = Global.Turn.Player;
-        turnTransition.Value = false;
-        showingActions.Raise();
-    }
-
-    private void EnemyTurn()
-    {
-        _currentTurn = Global.Turn.Enemy;
-        turnTransition.Value = false;
+        hideActions.Raise();
+        _currentPhase = Phase.EnemyTurn;
         enemyChoosing.Raise();
+        yield return new WaitForSeconds(2f);
     }
+
+    private void TurnTransition()
+    {
+        switch (_currentPhase)
+        {
+            case Phase.CombatIntro:
+                showCombatIntro.Raise();
+                showingActions.Raise();
+                _currentPhase = Phase.CombatIntro;
+                _currentPhase = Phase.PlayerTurn;
+                break;
+            case Phase.PlayerTurn:
+                StartCoroutine(PlayerEndedNowEnemyTurn());
+                break;
+            case Phase.EnemyTurn:
+                StartCoroutine(EnemyEndedNowPlayerTurn());
+                break;
+            case Phase.CombatConclusion:
+                break;
+        }
+    }
+}
+
+public enum Phase
+{
+    CombatIntro,
+    PlayerTurn,
+    EnemyTurn,
+    CombatConclusion
 }

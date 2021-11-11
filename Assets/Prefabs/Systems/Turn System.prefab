@@ -44,10 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 678f5284d5c0e8b4cbdc8c9c557cf676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnTransition:
+  isCombatOver:
     _useConstant: 0
     _constantValue: 0
-    _variable: {fileID: 11400000, guid: bc4145b90a900064ebd5c4d493d7eaf9, type: 2}
+    _variable: {fileID: 11400000, guid: f10e5e9dafaaaa047b06e05d43ab269b, type: 2}
+  showCombatIntro: {fileID: 11400000, guid: 5d9408e11294960428291ada3d6355e2, type: 2}
   showingActions: {fileID: 11400000, guid: ebfa39c7eef2a8a429520cd0dfe878ab, type: 2}
   hideActions: {fileID: 11400000, guid: 9b450f7f34260884283cc4f8602acf82, type: 2}
   enemyChoosing: {fileID: 11400000, guid: 877fa0aed6d2d2549998bf8ae7867639, type: 2}
@@ -73,7 +74,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7997501031647105707}
         m_TargetAssemblyTypeName: TurnSystem, Assembly-CSharp
-        m_MethodName: PassTurn
+        m_MethodName: TurnProgression
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

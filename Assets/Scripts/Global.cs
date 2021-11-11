@@ -1,6 +1,7 @@
 public class Global
 {
-    public enum ElementalType { 
+    public enum ElementalType 
+    { 
         Fire, 
         Water, 
         Thunder 
@@ -10,11 +11,6 @@ public class Global
         Null,
         Holy,
         Dark
-    }
-    public enum Turn
-    {
-        Player,
-        Enemy
     }
     public enum TransmuteType
     { 

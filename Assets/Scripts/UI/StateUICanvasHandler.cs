@@ -4,6 +4,7 @@ using TMPro;
 public class StateUICanvasHandler : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI actionLabel = default(TextMeshProUGUI);
+    [SerializeField] private Animator panelAnimator = default(Animator);
 
     public void ShowActionMessage(string message)
     {
@@ -13,5 +14,10 @@ public class StateUICanvasHandler : MonoBehaviour
     public void CleaningActionLabel()
     {
         actionLabel.text = string.Empty;
+    }
+
+    public void TriggerIntroAnimation ()
+    {
+        panelAnimator.SetTrigger("Intro");
     }
 }

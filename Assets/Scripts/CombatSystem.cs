@@ -1,17 +1,18 @@
 using ScriptableObjectArchitecture;
+using Sirenix.OdinInspector;
 using System;
 using UnityEngine;
 
 public class CombatSystem : MonoBehaviour
 {
-    [SerializeField] private PlayerStats playerStats = default(PlayerStats);
-    [SerializeField] private EnemyStats enemyStats = default(EnemyStats);
-    [SerializeField] private IntReference playerLife = default(IntReference);
-    [SerializeField] private IntReference enemyLife = default(IntReference);
-    [SerializeField] private IntReference playerBaseDamage = default(IntReference);
-    [SerializeField] private IntReference enemyBaseDamage = default(IntReference);
-    [SerializeField] private StringReference enemyElementalAttackType = default(StringReference);
-    [SerializeField] private StringReference playerElementalAttackType = default(StringReference);
+    [TabGroup("Player")] [InlineEditor] [SerializeField] private PlayerStats playerStats = default(PlayerStats);
+    [TabGroup("Enemy")] [InlineEditor] [SerializeField] private EnemyStats enemyStats = default(EnemyStats);
+    [TabGroup("Player")] [SerializeField] private IntReference playerLife = default(IntReference);
+    [TabGroup("Enemy")] [SerializeField] private IntReference enemyLife = default(IntReference);
+    [TabGroup("Player")] [SerializeField] private IntReference playerBaseDamage = default(IntReference);
+    [TabGroup("Enemy")] [SerializeField] private IntReference enemyBaseDamage = default(IntReference);
+    [TabGroup("Enemy")] [SerializeField] private StringReference enemyElementalAttackType = default(StringReference);
+    [TabGroup("Player")] [SerializeField] private StringReference playerElementalAttackType = default(StringReference);
     [SerializeField] private GameEvent turnFinished = default(GameEvent);
     private bool playerDefending;
     private bool enemyDefending;
